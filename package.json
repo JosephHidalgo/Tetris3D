@@ -1,6 +1,7 @@
 {
   "name": "c13---game-with-three",
   "version": "1.0.0",
+  "type": "module",
   "main": "main.js",
   "scripts": {
     "dev": "vite",
