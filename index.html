@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris 3D - Three.js</title>
+    <meta name="description" content="Tetris 3D desarrollado con Three.js - Experiencia de juego tridimensional">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+</head>
+<body>
+    <div id="main-menu">
+        <h1>TETRIS 3D</h1>
+        <p>
+            ¡Bienvenido!<br>
+            <b>Controles:</b> Flechas para mover y rotar, flecha abajo para bajar rápido.<br>
+            <b>Mouse:</b> Arrastra para girar la cámara, usa la rueda para acercar/alejar.<br>
+            <br>
+            Haz click en <b>Jugar</b> para comenzar.
+        </p>
+        <button id="btn-jugar">Jugar</button>
+    </div>
+    <div id="gameover-panel" style="display:none;">
+        <h1>¡Perdiste!</h1>
+        <p>
+            Tu partida ha terminado.<br>
+            <b>¿Quieres intentarlo de nuevo?</b>
+        </p>
+        <button id="btn-reiniciar">Reiniciar</button>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html> 

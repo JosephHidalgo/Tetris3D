@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #111;
+}
+
+#info,
+#hud,
+#instrucciones {
+    pointer-events: none;
+}
+
+#main-menu,
+#gameover-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    background: rgba(20, 20, 40, 0.85);
+    flex-direction: column;
+}
+
+#main-menu h1,
+#gameover-panel h1 {
+    color: #00e0ff;
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 3em;
+    margin-bottom: 0.2em;
+    letter-spacing: 0.1em;
+    text-shadow: 0 2px 16px #000, 0 0 8px #00e0ff;
+}
+
+#main-menu p,
+#gameover-panel p {
+    color: #fff;
+    font-size: 1.2em;
+    margin: 0.5em 0 1.5em 0;
+    max-width: 500px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 0.5em 1em;
+}
+
+#main-menu button,
+#gameover-panel button {
+    font-size: 1.3em;
+    padding: 0.6em 2.5em;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(90deg, #00e0ff 60%, #00ff88 100%);
+    color: #222;
+    font-weight: bold;
+    box-shadow: 0 2px 12px #00e0ff44;
+    cursor: pointer;
+    margin-bottom: 1em;
+    transition: background 0.2s, transform 0.2s;
+}
+
+#main-menu button:hover,
+#gameover-panel button:hover {
+    background: linear-gradient(90deg, #00ff88 60%, #00e0ff 100%);
+    transform: scale(1.06);
+}
+
+#gameover-panel {
+    background: rgba(60, 0, 0, 0.92);
+    box-shadow: 0 0 60px 10px #ff2222cc;
+    animation: gameover-fade 0.7s;
+}
+
+#gameover-panel h1 {
+    color: #ff4444;
+    text-shadow: 0 2px 16px #000, 0 0 16px #ff2222;
+}
+
+@keyframes gameover-fade {
+    from {
+        filter: blur(8px) opacity(0.2);
+    }
+
+    to {
+        filter: blur(0) opacity(1);
+    }
+}
